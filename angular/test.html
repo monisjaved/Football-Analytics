@@ -1,0 +1,72 @@
+<html>
+   
+   <head>
+      <title>AngularJS Directives</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <script src="node_modules/chart.js/Chart.min.js"></script>
+      <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+      <script src = "main.js"></script>
+   </head>
+   
+   <body>
+      <div ng-app="myApp">
+         <div class="jumbotron text-center">
+            <h1>UEFA Champions League Analysis</h1>
+           <!-- <p>Resize this responsive page to see the effect!</p>  -->
+         </div>
+        
+         <div class="container-fluid" ng-controller="autoRefreshController">
+           <div class="row">
+             <button type="button" class="btn-danger pull-right" ng-click="stopTimer()">Stop Count</button>
+           </div>
+           <p>
+           <div class="row">
+             <div class="col-xs-4">
+               <h3>{{data.name}}</h3>
+               <p>{{data.age}}</p>
+               <p>
+               <canvas id="pie" class="chart chart-pie"
+                 chart-data="pieData" chart-labels="pieLabels" chart-options="options">
+               </canvas> 
+             </div>
+             <div class="col-xs-8">
+               <ul class="list-group">
+                  <li class="list-group-item" ng-repeat="result in data.results">
+                     {{result.key}} <span class="badge">{{result.value}}</span>
+                  </li>
+               </ul>
+             </div>
+             <!-- <div class="col-sm-4">
+               <h3>Column 2</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+               <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+             </div>
+             <div class="col-sm-4">
+               <h3>Column 3</h3>        
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+               <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+             </div> -->
+           </div>
+         </div>
+            <!-- div ng-controller="autoRefreshController">
+               <div>
+                  Name: {{data.name}}<br/>
+                  Age: {{data.age}}<br/>
+                  <ul>
+                     Counts:
+                     <li ng-repeat="result in data.results">
+                        {{result.count}}
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <input type="button" ng-click="stopTimer()" value="Stop Count">
+               </div> -->
+
+   </body>
+</html>
