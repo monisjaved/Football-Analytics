@@ -1,2 +1,2 @@
-# Champions-League-Analytics
-UEFA Champions League Analytics using Python with Dashboard in Angular using Charts
+# Football - Analytics
+Analytics of Tweets of various footballers with respect to their teams and leagues.
