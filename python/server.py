@@ -11,11 +11,11 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-
 @app.route("/", methods=['POST','GET'])
 @cross_origin()
 def hello():
     data = simplejson.loads(request.data)
+<<<<<<< HEAD
     print data
     startDate = datetime.strptime(data['startDate'],"%Y-%m-%dT%H:%M:%S")
     endDate = datetime.strptime(data['endDate'],"%Y-%m-%dT%H:%M:%S")
@@ -113,4 +113,5 @@ def getFlareData(startDate, endDate, leagues):
 	return result
  
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
+

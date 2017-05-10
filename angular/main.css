@@ -1,0 +1,12 @@
+</style> <!-- Ugly Hack due to jsFiddle issue: http://goo.gl/BUfGZ --> 
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+<style>
+.error {
+    color: red;
+}
+.controller {
+    border: thin solid green;
+    padding: 0.3em;
+    margin: 0.3em;
+}
