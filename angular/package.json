@@ -1,0 +1,26 @@
+{
+  "name": "angular-UCL",
+  "version": "0.0.1",
+  "description": "UCL Analytics",
+  "main": "main.js",
+  "dependencies": {
+    "angular": "^1.4",
+    "angular-chart.js": "^1.1.1",
+    "chart": "^2.1",
+    "jquery-bracket": "^0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monisjaved/Champions-League-Analytics"
+  },
+  "keywords": [
+    "UCL",
+    "angular",
+    "python"
+  ],
+  "author": "Moonis Javed",
+  "license": "MIT",
+  "devDependencies": {
+    "angular-2-dropdown-multiselect": "^1.2.0"
+  }
+}
